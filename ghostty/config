@@ -1,0 +1,15 @@
+# ~/.config/ghostty/config
+
+font-size = 15
+
+theme = catppuccin-frappe
+
+# Cursor
+cursor-style = block
+cursor-color = c0caf5
+
+# Appearance
+background-opacity = 0.85
+
+# Scrollback buffer size
+scrollback-limit = 200000

@@ -1,0 +1,61 @@
+{
+  "layer": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-right": ["tray", "cpu", "memory", "network", "pulseaudio", "bluetooth", "clock", "custom/power"],
+
+  "tray": {
+    "spacing": 10
+  },
+
+  "clock": {
+    "tooltip-format": "{:%Y-%m-%d | %H:%M}",
+    "format-alt": "{:%Y-%m-%d}",
+    "format": "{:%a %Y-%m-%d %I:%M %p}"
+  },
+
+  "cpu": {
+    "format": "CPU {usage}%",
+    "on-click": "ghostty -e btop"
+  },
+
+  "memory": {
+    "format": "RAM {used:0.1f}G/{total:0.1f}G",
+    "on-click": "ghostty -e btop"
+  },
+
+  "network": {
+    "format-wifi": "Wi-Fi {signalStrength}%",
+    "format-ethernet": "LAN {ifname}: {ipaddr}/{cidr}",
+    "format-disconnected": "Offline",
+    "on-click": "ghostty -e nmtui"
+  },
+
+  "pulseaudio": {
+    "format": "Vol {volume}%",
+    "format-bluetooth": "Vol {volume}% BT",
+    "format-muted": "Muted",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "bluetooth": {
+    "format": "BT {status}",
+    "format-disabled": "BT Off",
+    "format-connected": "BT {num_connections} connected",
+    "on-click": "blueman-manager"
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": "Power Menu",
+    "on-click": "~/.config/rofi/powermenu.sh"
+  }
+}
