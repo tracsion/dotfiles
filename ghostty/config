@@ -1,15 +1,32 @@
 # ~/.config/ghostty/config
 
-font-size = 15
+# Theme setup
+theme = dark:catppuccin-mocha,light:catppuccin-latte
 
-theme = catppuccin-frappe
-
-# Cursor
-cursor-style = block
-cursor-color = c0caf5
-
-# Appearance
+# Background transparency
 background-opacity = 0.85
 
-# Scrollback buffer size
-scrollback-limit = 200000
+# Font settings with ligatures
+font-family = "JetBrainsMono"
+font-size = 14
+
+# Contrast settings
+minimum-contrast = 1.1
+
+# Mouse behavior
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 3.0
+
+# Scrollback & clipboard options
+scrollback-limit = 100000
+copy-on-select = true
+clipboard-trim-trailing-spaces = true
+clipboard-paste-bracketed-safe = true
+
+# Auto-update settings
+auto-update = check
+auto-update-channel = stable
+window-save-state = always
+
+# Shell integration features
+shell-integration = zsh
